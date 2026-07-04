@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NewsFetchers - Breaking News with Linked List</title>
+  <link rel="stylesheet" href="style2.css" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/21/21601.png" />
+</head>
+<body>
+  
+
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme">
+    <span id="themeIcon">🌙</span>
+  </button>
+
+
+  <div class="container">
+    <header class="header">
+      <h1>Smart NEWS</h1>
+      <p>Stay updated with top headlines — powered by DSA!</p>
+    </header>
+
+    <!-- Breaking News Section -->
+    <section class="breaking-news-section">
+      <div class="breaking-header">
+        <span class="breaking-icon">🗞️</span>
+        <h2>Breaking News</h2>
+        <div class="breaking-line"></div>
+      </div>
+
+      <div id="breakingNewsBox" class="breaking-news-box">
+        <p id="breakingHeadline">Loading latest headlines...</p>
+      </div>
+    </section>
+
+
+    <!-- Search & Categories -->
+    <div class="search-categories">
+      <input type="text" class="search-box" placeholder="Search news..." id="searchInput" />
+      <div class="categories">
+        <button class="category-btn active" data-category="general">General</button>
+        <button class="category-btn" data-category="business">Business</button>
+        <button class="category-btn" data-category="entertainment">Entertainment</button>
+        <button class="category-btn" data-category="health">Health</button>
+        <button class="category-btn" data-category="science">Science</button>
+        <button class="category-btn" data-category="sports">Sports</button>
+        <button class="category-btn" data-category="technology">Technology</button>
+      </div>
+    </div>
+
+    <!-- News Section -->
+    <div class="news-grid" id="newsGrid"></div>
+
+    <!-- Loading / Error / End -->
+    <div class="loading" id="loading" style="display:none;">Loading news...</div>
+    <div class="error" id="error" style="display:none;"></div>
+    <div class="end-message" id="endMessage" style="display:none;">🎉 You've reached the end!</div>
+
+    <!-- Bookmarked News Section -->
+    <section class="bookmarked-section" id="bookmarkedSection" style="display:none;">
+      <h2>⭐ Bookmarked News</h2>
+      <div class="news-grid" id="bookmarkedGrid"></div>
+      <div style="text-align:center;">
+        <button id="clearBookmarks" class="category-btn">🗑️ Clear All Bookmarks</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+</html>
+
+
